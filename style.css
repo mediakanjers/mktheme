@@ -1,0 +1,157 @@
+/*
+ Theme Name:     MKTheme
+ Theme URI:      http://www.mediakanjers.nl
+ Description:    Website ontworpen door Mediakanjers
+ Author:         Mediakanjers
+ Author URI:     http://www.mediakanjers.nl
+ Version:        2.0.9.94
+*/
+
+
+a, abbr, acronym, address, applet, b, big, blockquote, body, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, u, ul, var {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0px;
+    border: 0;
+    outline: 0;
+    background: 0 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+p { padding-bottom: 1em; }
+p:last-child { padding-bottom: 0; }
+
+img { display: block; max-width: 100%; height: auto; }
+button { outline: 0; }
+
+.clearfix::after { display: block; visibility: hidden; clear: both; height: 0; font-size: 0; content: " "; }
+
+.entry-content ul { padding-left: 15px; padding-bottom: 1em; }
+.entry-content ul:last-child { padding-bottom: 0; }
+
+
+.mk_builder p { padding: 0; }
+.mk_builder p:empty { padding: 0 !important; }
+.mk_builder .mk_sectie p { padding-bottom: 1em; }
+.mk_builder .mk_sectie p:last-child { padding-bottom: 0; }
+
+
+/*Secties en rijen*/
+.mk_sectie { position: relative; padding: 30px 0; }
+.mk_rij { position: relative; width: 80%; max-width: 1200px; margin: 0 auto; padding: 15px 0; }
+.mk_rij:after { content: ""; display: block; height: 0; width: 0; line-height: 0; clear: both; visibility: hidden; }
+
+.mk_onzichtbaar { display: none; }
+
+/*Koloms*/
+.mk_kolom { margin-right: 5.5%; float: left; min-height: 1px; }
+.mk_kolom_1_1 { width: 100%; margin-right: 0; }
+
+.mk_kolom_1_2 { width: 47.25%; }
+
+.mk_kolom_1_3 { width: 29.666%; }
+.mk_kolom_2_3 { width: 64.833%; }
+
+.mk_kolom_1_4 { width: 20.875%; }
+
+.mk_kolom_2:nth-child(2n+2) {margin-right: 0;}
+.mk_kolom_3:nth-child(3n+3) {margin-right: 0;}
+.mk_kolom_4:nth-child(4n+4) {margin-right: 0;}
+
+
+/*Modules*/
+.mk_module { margin-bottom: 15px; float: left; width: 100%; }
+.mk_module:last-child { margin-bottom: 0; }
+
+.mk_titel { margin-bottom: 10px; }
+
+.mk_lijst ul.half { float: left; width: 50%; }
+.mk_lijst .kop { padding-bottom: 10px; font-weight: 700; font-size: 18px; }
+
+
+/* Buttons */
+.mk_button { padding: 20px; background: #eee; border-radius: 10px; color: #000; text-decoration: none; text-transform: uppercase; font-size: 18px; transition: 200ms; -webkit-transition:200ms; }
+.mk_button:hover { padding: 20px 40px 20px 20px; }
+.mk_button:after { opacity: 0; margin-left: -10px; position: absolute; transition: 200ms; -webkit-transition:200ms; content: "\f105"; color: #000; font-family: "Font Awesome 5 Free"; font-weight: 600; }
+.mk_button:hover:after  { opacity: 1; margin-left: 10px; }
+
+
+/* Header */
+#top-header, #main-header  { background-color: #fff; }
+#top-header .container  { position: relative; width: 80%; max-width: 1200px; margin: 0 auto; }
+#main-header .container { position: relative; width: 80%; max-width: 1200px; margin: 0 auto; }
+
+
+/*logo*/
+.mk_logo_container { position: absolute; height: calc(100% + 30px) !important; width: auto !important; z-index: 9; }
+
+
+/*lightbox*/
+.fancybox-container { z-index: 9999999; }
+
+
+/* Footer */
+#main-footer { background-color: #f0efed; }
+
+.mk_footer1, .mk_footer2, .mk_footer3, .mk_footer4 { width: 100%; float: left; }
+.mk_footer { margin-bottom: 30px; }
+.mk_footer:last-child { margin-bottom: 0; }
+
+
+/*bottom*/
+#footer-bottom { background-color: #7fb61d; padding: 15px 0 5px 0;  }
+#footer-bottom .container  { position: relative; width: 80%; max-width: 1200px; margin: 0 auto; }
+#footer-info { float: left; padding-bottom: 10px; color: #666; text-align: left; color: #fff; }
+#footer-info a { color: #fff; }
+#footer-info:nth-child(2) { float: right; }
+
+
+/*Mk scroll top*/
+.mk_scrolltop {  position: fixed; z-index: 99999; bottom: 125px; padding: 5px; -webkit-border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; border-top-left-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-left-radius: 5px; background: rgba(0,0,0,.4); text-align: center; text-decoration: none; cursor: pointer; right: -40px; transition: 500ms; -webkit-transition: 500ms; }
+.mk_scrolltop.active { right: 0; }
+.mk_scrolltop:before { content: "\f106"; font-family: "Font Awesome 5 Free"; color: #fff; font-weight: 900; font-size: 20px; width: 30px; height: 30px; display: block; line-height: 1.5em;  }
+
+
+/* css Animaties  */
+@-webkit-keyframes fadeTop{0%{opacity:0;-webkit-transform:translateY(-10%)}100%{opacity:1;-webkit-transform:translateX(0)}}
+@-moz-keyframes fadeTop{0%{opacity:0;-moz-transform:translateY(-10%)}100%{opacity:1;-moz-transform:translateX(0)}}
+@-o-keyframes fadeTop{0%{opacity:0;-o-transform:translateY(-10%)}100%{opacity:1;-o-transform:translateX(0)}}
+@keyframes fadeTop{0%{opacity:0;transform:translateY(-10%)}100%{opacity:1;transform:translateX(0)}}
+
+@-webkit-keyframes fadeLeft{0%{opacity:0;-webkit-transform:translateX(-10%)}100%{opacity:1;-webkit-transform:translateX(0)}}
+@-moz-keyframes fadeLeft{0%{opacity:0;-moz-transform:translateX(-10%)}100%{opacity:1;-moz-transform:translateX(0)}}
+@-o-keyframes fadeLeft{0%{opacity:0;-o-transform:translateX(-10%)}100%{opacity:1;-o-transform:translateX(0)}}
+@keyframes fadeLeft{0%{opacity:0;transform:translateX(-10%)}100%{opacity:1;transform:translateX(0)}}
+
+
+
+
+@media only screen and (max-width: 980px) {
+    .mk_kolom_2 { width: 100%; margin-bottom: 30px; margin-right: 0; }
+    .mk_kolom_2:last-child { margin-bottom: 0; }
+    
+    .mk_kolom_1_4:nth-child(n) { width: 47.25%; }
+    .mk_kolom_4:nth-child(2n+2) {margin-right: 0;}
+    .mk_kolom_4:nth-child(3), .mk_kolomrij_4:nth-child(3) {margin-bottom: 0;}
+}
+
+@media only screen and (max-width: 767px) {
+    .mk_kolom_3:nth-child(n) { width: 100%; margin-right: 0; margin-bottom: 30px;}
+    .mk_kolom_3:last-child { margin-bottom: 0; }
+}
+
+@media only screen and (max-width: 479px) {
+    .mk_kolom_1_4:nth-child(n) { width: 100%; margin-right: 0; }
+    .mk_kolom_1_4:nth-child(3) { margin-bottom: 30px; }
+}

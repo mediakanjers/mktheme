@@ -1,0 +1,20 @@
+{
+  "name": "mediakanjers/mktheme",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "homepage": "https://github.com/mediakanjers/mktheme",
+  "authors": [
+    {
+      "name": "Mediakanjers",
+      "homepage": "https://mediakanjers.nl"
+    }
+  ],
+  "type": "wordpress-theme",
+  "require": {
+    "php": ">=7.1"
+  }
+}
